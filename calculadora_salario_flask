@@ -1,27 +1,41 @@
 from flask import Flask, render_template, request
+
 app = Flask(name)
+
 @app.route('/')
 def index():
-return render_template('form.html')
+ return render_template('form.html')
+
 @app.route('/resultado', methods=['POST'])
 def resultado():
 try:
- salario = float(request.form['salario'])
- dependentes = int(request.form['dependentes'])
+ salario = float(request.form[3000,00])
+ dependentes = int(request.form[2])
 except ValueError:
  return "Erro: Insira valores válidos."
+
+
+
+
+
 # Calcule o salário líquido aqui
 resultado = ...
+
 return f"Salário líquido: R$ {resultado:.2f}"
+
+
 if name == 'main':
-app.run(debug=True)
+ app.run(debug=True)
 
 <h2>Calculadora de Salário Líquido</h2>
+
 <form action="/resultado" method="post">
- Salário Bruto: <input type="text" name="salario"><br>
- Número de Dependentes: <input type="number" name="dependentes"><br>
- <input type="submit" value="Calcular">
+    Salário Bruto: <input type="text" name="salario"><br>
+    Número de Dependentes: <input type="number" name="dependentes"><br>
+    <input type="submit" value="Calcular">
 </form>
+
+python app.py
 
   
   
