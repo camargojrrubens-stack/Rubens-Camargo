@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request
 app = Flask(name)
 @app.route('/')
@@ -17,18 +16,12 @@ return f"Salário líquido: R$ {resultado:.2f}"
 if name == 'main':
 app.run(debug=True)
 
-  
-  Crie a pasta templates e adicione o arquivo form.html com o seguinte conteúdo:
-
-  
-  
-  <h2>Calculadora de Salário Líquido</h2>
+<h2>Calculadora de Salário Líquido</h2>
 <form action="/resultado" method="post">
  Salário Bruto: <input type="text" name="salario"><br>
  Número de Dependentes: <input type="number" name="dependentes"><br>
  <input type="submit" value="Calcular">
 </form>
 
-  python app.py
   
   
