@@ -23,7 +23,7 @@ if name == 'main':
 
 <form action="/resultado" method="post">
     Salário Bruto: <input type="text" name="salario"><br>
-    Número de Dependentes: <input type="name" name="dependentes"><br>
+    Número de Dependentes: <input type="number" name="dependentes"><br>
     <input type="submit" value="Calcular">
 </form>
 
