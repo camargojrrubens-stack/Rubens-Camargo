@@ -13,14 +13,6 @@ try:
  dependentes = int(request.form[2])
 except ValueError:
  return "Erro: Insira valores válidos."
-
-
-
-
-
-# Calcule o salário líquido aqui
-resultado = ...
-
 return f"Salário líquido: R$ {resultado:.2f}"
 
 
@@ -34,8 +26,3 @@ if name == 'main':
     Número de Dependentes: <input type="number" name="dependentes"><br>
     <input type="submit" value="Calcular">
 </form>
-
-python app.py
-
-  
-  
